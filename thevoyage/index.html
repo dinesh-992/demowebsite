@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Voyage Consultancy - Study Abroad Consultants </title>
+  <link rel="icon" href="./The Voyage Logo.png" type="image/x-icon">
+  <meta name="description" content="Achieve your study abroad dreams with The Voyage Consultancy in Hyderabad. Expert career guidance,university admission guidance,test preparation,training, and visa assistance.  Study in the USA, UK, Canada,Germany and more">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<meta name="keywords" content="the voyage consultancy, thevoyageconsultancy, Voyage, Voyage Consultancy, Pune, Mumbai, Maharashtra, Hyderabad, India, IELTS training, GRE training, GMAT training, TOEFL training, Duolingo training, study abroad, studying abroad, overseas education, university admissions, study in USA, study in UK, Canada student visa, IELTS coaching classes, overseas education consultants, GMAT preparation courses, study in UK, study in Canada, study in Australia, study in New Zealand, study in Germany, study in France, study in Spain,consultancy,overseas,consultancy near me,leading consultancy,US,UK,america,germany,spain,newzealnd,Master,Bachelor,study masterss in abroad,study bachelors in abroad">
+
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+.destination-item {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions */
+}
+
+.destination-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.destination-item img {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    
+}
+
+.destination-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333; /* Dark color for title */
+}
+
+.destination-item .learn-more {
+    display: none; /* Hide "Learn More" initially */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: rgba(0, 172, 124, 0.8); /* Semi-transparent green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.destination-item:hover .learn-more {
+    display: block; /* Show "Learn More" on hover */
+}
+
+@media (max-width: 768px) {
+    .destination-item {
+        width: 45%; /* Adjust width for smaller screens */
+        margin: 10px 0; /* Reduce spacing on smaller screens */
+    }
+}
+    
+    .phone-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 14px;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 1000;
+      text-decoration: none;
+    }
+
+    .phone-button:hover {
+      transform: scale(1.05);
+    }
+    #h2p2{
+      color: rgba(128, 128, 128, 0.953);
+      font-weight: 3em;
+    }
+    .hero {
+      background-image: none; /* Remove the background image */
+      height: 100vh; 
+      position: relative;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden; /* Prevent video overflow */
+    }
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure video covers the entire hero section */
+      z-index: 0; /* Place video behind the content */
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Keep the overlay */
+      z-index: 1; /* Place overlay above the video */
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2; /* Place content above the overlay */
+      max-width: 90%;
+    }
+    .consultants{
+      font-size:1.2em;
+      text-transform:uppercase;
+      margin-bottom:10px
+    }
+    .typewriter-container{
+      display:inline-block;
+      font-size:2.5em;
+      font-weight:700;
+      margin-bottom:20px;
+      white-space:nowrap;
+      overflow:hidden;
+      border-right:4px solid orange;
+      padding-right:5px;
+      animation:.8s infinite blink-caret
+    }
+    @keyframes blink-caret{
+      50%{border-color:transparent}
+    }
+    .voyage{
+      font-size:1em;
+      margin-bottom:30px
+    }
+    .register-button{
+      background-color:#10343c;
+      padding:15px 30px;
+      border:none;
+      border-radius:5px;
+      font-size:1.1em;
+      cursor:pointer;
+      transition:.3s
+    }
+   
+    @media (max-width:768px){
+      .hero{
+        height:100vh;
+        position: relative;
+        top: 20px;
+        padding:20px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center
+      }
+      .typewriter-container{
+        font-size:2em
+      }
+      .consultants{
+        font-size:1em
+      }
+      .voyage{
+        font-size:.9em
+      }
+      .register-button{
+        font-size:1em;
+        padding:12px 25px
+      }
+    }
+    @media (max-width:480px){
+      .typewriter-container{
+        font-size:1.8em
+      }
+      .consultants{
+        font-size:.9em
+      }
+      .voyage{
+        font-size:.8em
+      }
+      .register-button{
+        font-size:.9em;
+        padding:10px 20px
+      }
+    }
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      position: absolute;
+      will-change: transform;
+    }
+    #h{
+      color: orange;
+      font-weight: bold;
+    }
+    .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-brand {
+      color: #FFECB3;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover{
+      color: #FFF;
+    }
+   
+    #h3{
+      color: rgba(0, 0, 0, 0.723);
+      font-weight:600;
+    }
+    body {
+      .card{
+        border-radius: 20px;
+        border-color: white;
+        margin: 10px;
+        -webkit-box-shadow: 12px 14px 16px -7px rgba(247,237,237,0.72);
+        -moz-box-shadow: 12px 14px 16px -7px rgba(247,237,237,0.72);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .destinations-section {
+        padding: 50px 0;
+        text-align: center;
+      }
+      .destinations-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .destinations-subtitle {
+        font-size: 1.2em;
+        color: black;
+        margin-bottom: 30px;
+      }
+      .destinations-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destinations-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.destinations-subtitle {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.destination-item {
+    display: inline-block;
+    width: 25%; /* Adjusted width */
+    margin: 10px; /* Consistent margins */
+    text-align: center;
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensure images cover the container */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* ... other styles ... */
+
+@media (max-width: 768px) {
+    .destination-item {
+        width: 45%;
+        margin: 10px; /* Adjust margins for smaller screens */
+    }
+}
+      .orange-highlight {
+        background-color: #fd7e14;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .divider {
+        width: 50px;
+        height: 2px;
+        background-color: #333;
+        margin: 10px auto 20px;
+      }
+      @media (max-width: 768px) {
+        .destination-item {
+          width: 45%;
+          margin: 20px 0;
+        }
+      }
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+    }
+    .services-section {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .services-title {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+    .services-subtitle {
+      font-size: 1.2em;
+      color: black;
+      margin-bottom: 40px;
+    }
+    .service-item {
+      display: inline-block;
+      width: 200px;
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+    .service-item img {
+      max-width: 80px;
+      margin-bottom: 15px;
+    }
+    .service-item h3 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #343a40;
+    }
+    .service-item p {
+      font-size: 0.9em;
+      color: #6c757d;
+    }
+    .orange-bar {
+      background-color: #fd7e14;
+      height: 5px;
+      width: 100px;
+      margin: 10px auto 20px;
+    }
+    #h2{
+      color: #08303c;
+      font-weight:700;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-button:hover {
+      transform: scale(1.05);
+    }
+    .whatsapp-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .button-text {
+      font-weight: bold;
+    }
+    .footer {
+      background-color: #003366;
+      color: white;
+      padding: 40px 20px;
+      font-family: sans-serif;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .footer-section {
+      width: 20%;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+    .footer-section h3 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    .footer-section p, .footer-section ul {
+      font-size: 0.9em;
+      line-height: 1.6;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 5px;
+    }
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .social-icons img {
+      width: 25px;
+      height: 25px;
+    }
+    .navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 166, 0, 0.895)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* Style for the dropdown links */
+.navbar-dark .navbar-nav .nav-link, 
+.navbar-dark .navbar-nav .dropdown-item {
+  color: #10343c; /* A dark color with good contrast against orange */
+
+}
+/* Style for the dropdown links */
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .dropdown-item {
+  color: #10343c; /* Dark color for normal state */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Add transitions */
+}
+.navbar-nav > button { /* Targets the button within the navbar */
+  background-color: rgba(255, 166, 0, 0.895); /* Orange background */
+  color: #10343c !important; /* Dark color for text */
+  border: none; /* Removes any default border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Adds rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adds smooth transitions */
+}
+
+
+
+.navbar-nav > button > a { /* Targets the link within the button */
+  text-decoration: none; /* Removes underline from link */
+  font-weight: bold; /* Makes text bold */
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .dropdown-item:hover {
+  color: black !important; /* Black bold text on hover */
+  background-color: rgba(255, 166, 0, 0.895); /* Orange background on hover */
+}
+    .register-button {
+      background-color: #10343c;
+      color: #f09c0c;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <header style="position: fixed; width: 100%; z-index: 100;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: white ">
+      <div class="container">
+        <img src="./The Voyage Logo.png"  style="width: 50px; ;" alt="Student visa guidance for Abroad">>
+        &nbsp; &nbsp;<span style="position: relative;top: -5px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black; letter-spacing: 1px; font-weight: bold;font-size: 1.5em;"> The Voyage </span>
+        <a class="navbar-brand" href="./index.html"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="bachelorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bachelor's
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="bachelorsDropdown">
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">United States</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Australia</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">United Kingdom</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Canada</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Ireland</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">New Zealand</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">France</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Germany</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mastersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Master's
+              </a>
+    
+              <ul class="dropdown-menu" aria-labelledby="mastersDropdown">
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">United States</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Australia</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">United Kingdom</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Canada</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Ireland</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">New Zealand</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">France</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform?usp=dialog">Germany</a></li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="trainingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Training
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="trainingDropdown">
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScmYdPCs_Le3bi3sK2VEHL4SERgsl6ehPdIvqaXVnRaW2g8_Q/viewform?usp=dialog">IELTS Training</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScmYdPCs_Le3bi3sK2VEHL4SERgsl6ehPdIvqaXVnRaW2g8_Q/viewform?usp=dialog">PTE Training</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScmYdPCs_Le3bi3sK2VEHL4SERgsl6ehPdIvqaXVnRaW2g8_Q/viewform?usp=dialog">GRE Training</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScmYdPCs_Le3bi3sK2VEHL4SERgsl6ehPdIvqaXVnRaW2g8_Q/viewform?usp=dialog">TOEFL Training</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScmYdPCs_Le3bi3sK2VEHL4SERgsl6ehPdIvqaXVnRaW2g8_Q/viewform?usp=dialog">GMAT Training</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScmYdPCs_Le3bi3sK2VEHL4SERgsl6ehPdIvqaXVnRaW2g8_Q/viewform?usp=dialog">Duolingo Training</a></li>
+              </ul>
+
+            </li>
+            <button style="border-radius: 5px;"><a style="color: #10343c; font-weight: bold; background-color: ; text-decoration: none;" href="https://docs.google.com/forms/d/e/1FAIpQLScnMhki94DDJvD9p-ez86xRHXwZuPC6brnSHcCkB1JTa9_MZg/viewform">Get Free Counsellation</a></button>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+<div id="parent" style="background-color:rgba(255, 166, 0, 0.916)">
+  
+  <div class="hero">
+    <video autoplay muted loop>
+      <source src="./bg video.mp4" type="video/mp4"> 
+    </video>
+    <div class="hero-content">
+      <p class="consultants" style="font-size: 1.5em; letter-spacing: 10px; font-weight: bolder;font-family: 'Times New Roman', Times, serif;">The Voyage Consultancy </p>
+      <p style="letter-spacing: 2px;">Offers you</p>
+      <div class="typewriter-container" id="changing-text"></div>
+      <p class="voyage"></p>
+      <br>
+      <a style="text-decoration: none; font-weight: bold; color:#f09c0c; font-weight: bolder;" href="https://docs.google.com/forms/d/e/1FAIpQLScnMhki94DDJvD9p-ez86xRHXwZuPC6brnSHcCkB1JTa9_MZg/viewform">      <button class="register-button" >  Register now - Get a call in 15 mins</button></a>
+    </div>
+  </div>
+
+  <section class="services-section">
+    <h2 class="destinations-title" style="margin-bottom: 50px;text-align: center;color: black;">What <span style="background-color: #08303c ;border-radius: 5px;padding: 7px;color: white;">We Do</span></h2>
+    <div class="divider"></div>
+    <p class="services-subtitle">Services </p>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="service-item">
+          <img src="nomad-visa-1.png" alt="Study Visa">
+          <h3>Study Visas</h3>
+        </div>
+        <div class="service-item">
+          <img src="./travel.png" alt="Dependent Visa">
+          <h3>Dependent Visas</h3>
+        </div>
+        <div class="service-item">
+          <img src="passport.png" alt="Visit Visa">
+          <h3>Visit Visas</h3>
+        </div>
+        <div class="service-item">
+          <img src="immigration.png" alt="Immigration">
+          <h3>Immigration</h3>
+        </div>
+        <div class="service-item">
+          <img src="medicine.png" alt="Medicine Abroad">
+          <h3>Medicine Abroad</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        
+        
+        <div class="service-item">
+          <img src="training.png" alt="IELTS,GPAT,GRE,DUOLINGO Training">
+          <h3>Training</h3>
+        </div>
+        <div class="service-item">
+          <img src="./money.png" alt="Financial Guidance">
+          <h3 >Financial Aid
+            Guidance</h3>
+        </div>
+        <div class="service-item">
+          <img src="./uni.png"  alt="University Admission Guidance">
+          <h3 >Admission Guidance</h3>
+        </div>
+        <div class="service-item">
+          <img src="scholarship.png" alt="University Scholarship">
+          <h3>Scholarship</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="destinations-section">
+    <p class="destinations-subtitle">Countries</p>
+    <div class="divider"></div>
+    <h2 class="destinations-title" style="margin-bottom: 50px; color: black;">Explore top <span style="background-color: #08303c;padding: 7px;border-radius: 5px;color: white;">study</span> destinations</h2>
+
+    <div class="container">
+      <div class="row justify-content-center" style="display: flex; flex-wrap: wrap;"> 
+          <a style="text-decoration: none;" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ENzJOy17u2ZXO5wTNGkHxDAB3gJ5idPcF8lyRl1wVeR0gQ/viewform">
+              <div class="destination-item"> <img src="./usa.jpeg" alt="Student visa guidance for USA"> <h3 id="h3">USA</h3> </div>
+              <div class="destination-item"> <img src="./canada.jpeg" alt="Student visa guidance for Canada"> <h3 id="h3">Canada</h3> </div>
+              <div class="destination-item"> <img src="uk2.jpeg" alt="Student visa guidance for UK"> <h3 id="h3">UK</h3> </div>
+              <div class="destination-item"> <img src="aus1.jpeg" alt="Student visa guidance for Australia"> <h3 id="h3">Australia</h3> </div>
+              <div class="destination-item"> <img src="nz.jpeg" alt="Student visa guidance for New Zealand"> <h3 id="h3">New Zealand</h3> </div>
+              <div class="destination-item"> <img src="./france.jpeg" alt="Student visa guidance for France"> <h3 id="h3">France</h3> </div>
+              <div class="destination-item"> <img src="./study.jpeg" alt="Student visa guidance for all countries"> <h3 id="h3">and more</h3> </div>
+          </a>
+      </div>
+  </div>
+  
+  </section>
+
+  <div class="container">
+    <h2 class="destinations-title" style="margin-bottom: 50px;text-align: center;color: black;">Our <span style="background-color: #08303c ;border-radius: 5px;padding: 5px;color: white;">Patners</span></h2>
+    <div class="divider"></div>
+
+    <br>
+    <div class="card" style="padding: 20px;">
+      <h2 id="h2">University Partners</h2>
+      <p id="h2p2">We collaborate with top-ranked universities across the globe, including those in the USA, UK, Canada, Australia, and Europe. From Ivy League institutions to specialized colleges, our network spans a diverse range of academic fields and disciplines. Whether you're seeking undergraduate, postgraduate, or professional programs, our partnerships ensure you have access to the best-fit institutions that align with your goals.</p>
+    </div>
+
+    <div class="card"style="padding: 20px;">
+      <h2 id="h2">Language and Test Preparation Centers</h2>
+      <p id="h2p2">We work closely with leading language schools and exam preparation centers to ensure our students are fully equipped to meet academic and visa requirements. From IELTS and TOEFL to GRE and GMAT preparation, our partners provide tailored coaching to help students succeed.</p>
+    </div>
+
+    <div class="card"style="padding: 20px;">
+      <h2 id="h2">Scholarship Organizations</h2>
+      <p id="h2p2">Financial barriers should never hinder a student's ambitions. That's why The Voyage partners with global scholarship providers, government funding bodies, and private foundations to offer students access to life-changing financial aid opportunities.</p>
+    </div>
+
+    <div class="card" style="padding: 20px;">
+      <h2 id="h2">Corporate and Career Networks</h2>
+      <p id="h2p2">To support students beyond academics, we collaborate with career development organizations and internship platforms. These partnerships help students gain practical experience, build networks, and launch successful careers after graduation.</p>
+    </div>
+  </div>
+  .
+</div>
+<div id="mv" style="margin-top: 50px; margin-bottom: 50px; text-align: center;"> 
+  <div class="mission-container">
+      <h2 style="margin-bottom: 20px;">
+          <span style="font-weight: bold;">Our</span> <span style="background-color: #10343c; color: white; font-weight: bold; padding: 5px; border-radius: 5px;">Mission</span> 
+      </h2>
+      <p style="font-size: 1.2em; line-height: 1.6; color: #555; max-width: 800px; margin: 0 auto;">
+          “To provide ethical, transparent, and reliable guidance to students, fostering academic growth and personal success.”
+      </p>
+  </div>
+
+  <div class="vision-container" style="margin-top: 40px;">
+      <h2 style="margin-bottom: 20px;">
+        <span style="font-weight: bold;">Our</span> <span style="background-color: #10343c; color: white; font-weight: bold; padding: 5px; border-radius: 5px;">Vision</span>
+      </h2>
+      <p style="font-size: 1.2em; line-height: 1.6; color: #555; max-width: 800px; margin: 0 auto;">
+          “To be the leading educational consultancy empowering students to achieve global excellence.”
+      </p>
+  </div>
+</div>
+  <div class="whatsapp-button">
+
+    <span class="button-text"><a style="text-decoration: none;color: white;" href="https://wa.me/8530884475?text=Hello"><img src="./w1.png" width="30px"><span style="position: relative; top: 2px;">Chat with us</span></a>
+    </span>
+  </div>
+  <a href="tel:+91-8530884475" class="phone-button">
+    <img src="./p1.png" width="23px" style="border-radius: 50px;">&nbsp; <span style="position: relative; top: 2px; font-weight: bold;">Quick Enquiry</span>
+  </a>
+</div>
+  
+  <footer class="footer" style="background-color: #10343c;border-top: 30px;">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3 id="h">We are The Voyage Consultancy</h3>
+        <p>At The Voyage, we understand that every individual’s educational journey is unique. With our expertise and dedication, we help students navigate the complexities of global education, from selecting the right courses and institutions to securing scholarships and managing visa applications.</p>
+        Our Brochure <a style="text-decoration: none;color: white;" href="./the voyage brochure_compressed.pdf" download><img src="./pdf.png" style="width: 20px;border-radius: 5px;"></a>
+        <div class="social-icons">
+          <span>connect with us</span>
+          <a href="https://www.instagram.com/the_voyage_consultancy/?igsh=MXJybDA0aXZnbzVoZQ%3D%3D#" target="_blank"><img style="border-radius: 5px;" src="./insta.jpeg" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/in/the-voyage-b776a5347/" target="_blank"><img style="border-radius: 5px;" src="./linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3 id="h">Head Office:</h3>
+        <p>The Voyage<br>A-Wing,Terra Greens,Sangavade<br>Pune<br>Maharastra - 412101</p>
+        <p>+91-8530884475</p>
+        <p>thevoyageconsultancy@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h3 id="h">Services</h3>
+        <ul>
+          <li>University Admission Guidance</li>
+          <li>Financial Aid Guidance</li>
+          <li>Study visas</li>
+          <li>Dependent visas</li>
+          <li>Visit visas</li>
+          <li>Immigration</li>
+          <li>MBBS abroad</li>
+          <li>Training</li>
+          
+        </ul>
+      </div>
+    </div>
+    
+  </footer>
+  <script src="./pic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
